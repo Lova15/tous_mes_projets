@@ -1,0 +1,26 @@
+<%=  form_for @user , url:  inscription_index_path  do |t| %>
+	
+	<div class="fo form-group align-middle">
+		<label> Nom </label>
+		<%= t.text_field :nom, class: 'form-control' %>
+	</div>
+
+	<div class="fo form-group align-middle">
+		<label>Prénom</label>
+		<%= t.text_area :prenom, class: 'form-control' %>
+	</div>
+
+	<div class="fo form-group align-middle">
+		<label>Email</label>
+		<%= t.text_area :email, class: 'form-control' %>
+	</div>
+
+	<div class="fo form-group align-middle">
+		<label>Mot de passe </label>
+		<%= t.text_area :password, class: 'form-control' %>
+	</div>
+
+	<div class="form">
+		<button type="submit" class="btn btn-success">Confirmer</button>
+	</div>
+<% end %>

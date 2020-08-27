@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @post.name.upcase %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @post.age %>
+</p>
+
+<%= link_to 'Modifier', edit_post_path(@post),class:"btn btn-warning" %> |
+<%= link_to 'Retour', posts_path, class:"btn btn-default" %>

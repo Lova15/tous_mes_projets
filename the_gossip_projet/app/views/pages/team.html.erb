@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="team.css">
+</head>
+<body>
+  <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Nom</th>
+      <th scope="col">Prénom</th>
+      <th scope="col">Perso manga</th>      
+    </tr>
+  </thead>
+  <tbody>
+    <% @author.each do |t| %>
+      <tr>
+        <td class="c"><%= t.first_name %></td>
+        <td class="c"><%= t.last_name %></td>
+        <td class="c"><%= t.content %></td>
+      </tr>
+    <% end %>
+
+  </tbody>
+</table>
+</body>
+</html>

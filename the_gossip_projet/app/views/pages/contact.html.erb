@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="contact.css">
+</head>
+<body>
+  <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Pseudo</th>
+      <th scope="col">Email</th>
+      <th scope="col">Tel</th>      
+    </tr>
+  </thead>
+  <tbody>
+    <% @author.each do |t| %>
+      <tr>
+        <td class="eric"><%= t.last_name %></td>
+        <td class="eric"><%= t.email %></td>
+        <td class="eric"><%= t.tel %></td>
+      </tr>
+    <% end %>
+
+  </tbody>
+</table>
+</body>
+</html>
+
+
